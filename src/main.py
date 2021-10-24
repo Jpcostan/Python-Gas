@@ -2,7 +2,7 @@ import requests
 import pprint
 import json 
 
-r = requests.get('https://ethgasstation.info/api/ethgasAPI.json?api-key=f8c65ec148a5a195b73f00241810944500a7fe7fa04b073b0c8c118b00ca')
+r = requests.get('https://ethgasstation.info/api/ethgasAPI.json?api-key=##YOUR-KEY_HERE##')
 #print(r.json())
 #pprint.pprint(r.json())
 #need to parse the json to only print 'average' key and val

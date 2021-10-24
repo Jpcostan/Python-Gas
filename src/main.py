@@ -3,7 +3,7 @@ import pprint
 
 #Request with EthGasStation API key.
 #You will need to create an account and input key in the string below.
-r = requests.get('https://ethgasstation.info/api/ethgasAPI.json?api-key=f8c65ec148a5a195b73f00241810944500a7fe7fa04b073b0c8c118b00ca')
+r = requests.get('https://ethgasstation.info/api/ethgasAPI.json?api-key=YOURAPIKEYHERE')
 
 #Capture the json from request.
 x = r.json()
@@ -21,7 +21,7 @@ print("Current gas average :" + str(x['average']))
 #This is an infinite loop. It will continuously execute in it's current form
 #unless configured otherwise. 
 while(1):
-    r = requests.get('https://ethgasstation.info/api/ethgasAPI.json?api-key=f8c65ec148a5a195b73f00241810944500a7fe7fa04b073b0c8c118b00ca')
+    r = requests.get('https://ethgasstation.info/api/ethgasAPI.json?api-key=YOURAPIKEYHERE')
     x = r.json()
     gas = x['average']
     if gas <= 650:
